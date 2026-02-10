@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NQX2SLQL2Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-NQX2SLQL2Z');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - RAWLISTS.ORG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #FF0000;
+            font-family: 'Arial Black', Arial, sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .site-title {
+            font-size: 0.825rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1.1rem;
+            text-align: center;
+        }
+
+        .site-title a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        .page-header {
+            border-bottom: 2px solid #FF0000;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #FF0000;
+            line-height: 1;
+        }
+
+        .content {
+            margin-bottom: 3rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .form-container {
+            background-color: #000000;
+            border: 2px solid #FF0000;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-note {
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            background-color: #000000;
+            border: 2px solid #FF0000;
+            color: #FF0000;
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #FF0000;
+            background-color: #1a0000;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #FF0000;
+            color: #000000;
+            border: 2px solid #FF0000;
+            padding: 0.75rem 2rem;
+            font-size: 0.875rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+
+        .submit-btn:hover {
+            background-color: #000000;
+            color: #FF0000;
+        }
+
+        .success-message {
+            display: none;
+            background-color: #000000;
+            border: 2px solid #FF0000;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid #FF0000;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #FF0000;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 900;
+            transition: opacity 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-slogan {
+            font-size: 0.875rem;
+            color: #FF0000;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 640px) {
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .form-container {
+                padding: 1.5rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title"><a href="index.html">RAWLISTS.ORG</a></h1>
+            <div class="page-header">
+                <h2 class="page-title">Contact</h2>
+            </div>
+        </header>
+
+        <div class="content">
+            <p>Questions, feedback, or corrections? Send us a message.</p>
+
+            <div class="success-message" id="successMessage">
+                <p style="font-weight: 900; font-size: 1.1rem;">MESSAGE SENT</p>
+                <p style="margin-bottom: 0;">Thanks for reaching out. We'll get back to you soon.</p>
+            </div>
+
+            <div class="form-container">
+                <p class="form-note">No data is collected.</p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <p><strong>We'll get back to you as soon as possible.</strong></p>
+        </div>
+
+        <footer style="margin-top: auto;">
+            <div class="footer-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="submit.html">SUBMIT LIST REQUEST</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <p class="footer-slogan">RAWLISTS.ORG — Pure data, no bullshit.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple form handler - no data is sent anywhere
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            document.getElementById('successMessage').classList.add('show');
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to success message
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                document.getElementById('successMessage').classList.remove('show');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
